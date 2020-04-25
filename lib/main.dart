@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
                 child: Column(
                   children: <Widget>[
                     CircleAvatar(
-                      // backgroundColor: Colors.green,
+                      backgroundImage: AssetImage("assets/Madhav_Paudel_photo_square.jpg"),
                       radius: 60.0,
                     ),
                     Text("Madhav Paudel"),
