@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() => runApp(MyApp());
 
@@ -81,32 +82,41 @@ class MyApp extends StatelessWidget {
               ),
               Card(
                 elevation: 2.0,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: <Widget>[
-                    IconButton(
-                      onPressed: () {
-                        print("pressed");
-                      },
-                      color: Colors.blue,
-                      icon: FaIcon(FontAwesomeIcons.facebook),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      color: Colors.lightBlueAccent,
-                      icon: FaIcon(FontAwesomeIcons.twitter),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      color: Colors.black,
-                      icon: FaIcon(FontAwesomeIcons.github),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      color: Colors.pink,
-                      icon: FaIcon(FontAwesomeIcons.instagram),
-                    ),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: <Widget>[
+                      IconButton(
+                        onPressed: () {
+                          launch("https://facebook.com/poudelmadhav143");
+                        },
+                        color: Colors.blue,
+                        icon: FaIcon(FontAwesomeIcons.facebook),
+                      ),
+                      IconButton(
+                        onPressed: () {
+                          launch("https://twitter.com/poudelmadhav143");
+                        },
+                        color: Colors.lightBlueAccent,
+                        icon: FaIcon(FontAwesomeIcons.twitter),
+                      ),
+                      IconButton(
+                        onPressed: () {
+                          launch("https://github.com/poudelmadhav");
+                        },
+                        color: Colors.black,
+                        icon: FaIcon(FontAwesomeIcons.github),
+                      ),
+                      IconButton(
+                        onPressed: () {
+                          launch("https://instagram.com/poudelmadhav143");
+                        },
+                        color: Colors.pink,
+                        icon: FaIcon(FontAwesomeIcons.instagram),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               Padding(
