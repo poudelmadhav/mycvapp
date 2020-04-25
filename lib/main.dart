@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() => runApp(MyApp());
 
@@ -87,23 +88,23 @@ class MyApp extends StatelessWidget {
                       onPressed: () {
                         print("pressed");
                       },
-                      color: Colors.green,
-                      icon: Icon(Icons.accessibility),
-                    ),
-                    IconButton(
-                      onPressed: () {},
                       color: Colors.blue,
-                      icon: Icon(Icons.backup),
+                      icon: FaIcon(FontAwesomeIcons.facebook),
                     ),
                     IconButton(
                       onPressed: () {},
-                      color: Colors.red,
-                      icon: Icon(Icons.map),
+                      color: Colors.lightBlueAccent,
+                      icon: FaIcon(FontAwesomeIcons.twitter),
                     ),
                     IconButton(
                       onPressed: () {},
-                      color: Colors.deepPurple,
-                      icon: Icon(Icons.headset),
+                      color: Colors.black,
+                      icon: FaIcon(FontAwesomeIcons.github),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      color: Colors.pink,
+                      icon: FaIcon(FontAwesomeIcons.instagram),
                     ),
                   ],
                 ),
