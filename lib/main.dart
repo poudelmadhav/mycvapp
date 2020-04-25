@@ -7,7 +7,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "My CV App",
-      home: Scaffold(),
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text("My CV App"),
+        ),
+      ),
     );
   }
 }
