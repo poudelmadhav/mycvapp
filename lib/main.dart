@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
                   children: <Widget>[
                     CircleAvatar(
                       backgroundImage:
-                          AssetImage("assets/Madhav_Paudel_photo_square.jpg"),
+                          AssetImage("assets/images/Madhav_Paudel_photo_square.jpg"),
                       radius: 60.0,
                     ),
                     SizedBox(
@@ -58,6 +58,7 @@ class MyApp extends StatelessWidget {
                       "Hello, I am Software Engineer at Namesace Inc. I spefically work of web development. But are is not limited. Sometimes I work on AWS. And sometimes I work on frontend using React too. I have worked on many projects using gulp.",
                       style: TextStyle(
                         fontSize: 15.0,
+                        fontFamily: "NotoSans",
                       ),
                     ),
                   ],
